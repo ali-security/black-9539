@@ -38,9 +38,9 @@ jobs:
 
       - name: Install Black and PyInstaller
         run: |
-          python -m pip install --upgrade pip wheel
-          python -m pip install .[colorama]
-          python -m pip install pyinstaller
+          python -m pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' --upgrade pip wheel
+          python -m pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' .[colorama]
+          python -m pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' pyinstaller
 
       - name: Build executable with PyInstaller
         run: >

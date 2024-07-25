@@ -30,9 +30,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip setuptools wheel
-          python -m pip install -e ".[d]"
-          python -m pip install -r "docs/requirements.txt"
+          python -m pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' --upgrade pip setuptools wheel
+          python -m pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' -e ".[d]"
+          python -m pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' -r "docs/requirements.txt"
 
       - name: Build documentation
         run: sphinx-build -a -b html -W --keep-going docs/ docs/_build

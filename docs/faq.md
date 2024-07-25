@@ -56,7 +56,7 @@ for details.
 _Black_ is timid about formatting Jupyter Notebooks. Cells containing any of the
 following will not be formatted:
 
-- automagics (e.g. `pip install black`)
+- automagics (e.g. `pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' black`)
 - non-Python cell magics (e.g. `%%writeline`). These can be added with the flag
   `--python-cell-magics`, e.g. `black --python-cell-magics writeline hello.ipynb`.
 - multiline magics, e.g.:
@@ -130,7 +130,7 @@ currently **not** supported. These platforms will fall back to the slower pure P
 wheel available on PyPI.
 
 If you are experiencing exceptionally weird issues or even segfaults, you can try
-passing `--no-binary black` to your pip install invocation. This flag excludes all
+passing `--no-binary black` to your pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' invocation. This flag excludes all
 wheels (including the pure Python wheel), so this command will use the [sdist].
 
 [mypyc]: https://mypyc.readthedocs.io/en/latest/

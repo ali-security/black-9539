@@ -13,8 +13,8 @@ example:
 ```console
 $ python3 -m venv .venv
 $ source .venv/bin/activate
-(.venv)$ pip install -r test_requirements.txt
-(.venv)$ pip install -e .[d]
+(.venv)$ pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' -r test_requirements.txt
+(.venv)$ pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' -e .[d]
 (.venv)$ pre-commit install
 ```
 
@@ -61,8 +61,8 @@ instead and write the changelog entry under a dedicated "Preview changes" headin
 If you make changes to docs, you can test they still build locally too.
 
 ```console
-(.venv)$ pip install -r docs/requirements.txt
-(.venv)$ pip install [-e] .[d]
+(.venv)$ pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' -r docs/requirements.txt
+(.venv)$ pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' [-e] .[d]
 (.venv)$ sphinx-build -a -b html -W docs/ docs/_build/
 ```
 

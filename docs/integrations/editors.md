@@ -13,7 +13,7 @@ Options include the following:
 1. Install _Black_ with the `d` extra.
 
    ```console
-   $ pip install 'black[d]'
+   $ pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' 'black[d]'
    ```
 
 1. Install
@@ -61,7 +61,7 @@ procedure is:
 - Install `black`.
 
   ```console
-  $ pip install black
+  $ pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' black
   ```
 
 - Make sure it runs from the command line, e.g.
@@ -226,7 +226,7 @@ $ pip uninstall typed-ast -y
 And now you can install them with:
 
 ```console
-$ pip install --no-binary :all: typed-ast
+$ pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' --no-binary :all: typed-ast
 ```
 
 The C extensions will be compiled and now Vim's Python environment will match. Note that
@@ -236,7 +236,7 @@ Ubuntu/Debian do `sudo apt-get install build-essential python3-dev`).
 If you later want to update _Black_, you should do it like this:
 
 ```console
-$ pip install -U black --no-binary typed-ast
+$ pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' -U black --no-binary typed-ast
 ```
 
 ### With ALE

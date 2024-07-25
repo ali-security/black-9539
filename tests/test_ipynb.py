@@ -222,7 +222,7 @@ def test_cell_magic_with_magic_noop() -> None:
 
 
 def test_automagic() -> None:
-    src = "pip install black"
+    src = "pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' black"
     with pytest.raises(NothingChanged):
         format_cell(src, fast=True, mode=JUPYTER_MODE)
 

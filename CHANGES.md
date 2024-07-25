@@ -368,7 +368,7 @@ and the first release covered by our new
 
 ### Documentation
 
-- Change protocol in pip installation instructions to `https://` (#2761)
+- Change protocol in pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/'ation instructions to `https://` (#2761)
 - Change HTML theme to Furo primarily for its responsive design and mobile support
   (#2793)
 - Deprecate the `black-primer` tool (#2809)
@@ -687,7 +687,7 @@ and the first release covered by our new
 - PR #2053: Black no longer relies on typed-ast for Python 3.8 and higher
 
 - PR #2053: Python 2 support is now optional, install with
-  `python3 -m pip install black[python2]` to maintain support.
+  `python3 -m pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' black[python2]` to maintain support.
 
 - Exclude `venv` directory by default (#1683)
 

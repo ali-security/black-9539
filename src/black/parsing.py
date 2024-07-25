@@ -32,7 +32,7 @@ except ImportError:
             (
                 "The typed_ast package is required but not installed.\n"
                 "You can upgrade to Python 3.8+ or install typed_ast with\n"
-                "`python3 -m pip install typed-ast`."
+                "`python3 -m pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' typed-ast`."
             ),
             file=sys.stderr,
         )

@@ -64,7 +64,7 @@ def jupyter_dependencies_are_installed(*, verbose: bool, quiet: bool) -> bool:
         if verbose or not quiet:
             msg = (
                 "Skipping .ipynb files as Jupyter dependencies are not installed.\n"
-                "You can fix this by running ``pip install black[jupyter]``"
+                "You can fix this by running ``pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' black[jupyter]``"
             )
             out(msg)
         return False

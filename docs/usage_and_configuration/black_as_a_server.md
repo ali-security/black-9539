@@ -12,7 +12,7 @@ precautions in place to prevent abuse. **It is intended for local use only**.
 ## Usage
 
 `blackd` is not packaged alongside _Black_ by default because it has additional
-dependencies. You will need to execute `pip install 'black[d]'` to install it.
+dependencies. You will need to execute `pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' 'black[d]'` to install it.
 
 You can start the server on the default port, binding only to the local interface by
 running `blackd`. You will see a single line mentioning the server's version, and the

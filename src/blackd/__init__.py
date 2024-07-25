@@ -14,7 +14,7 @@ except ImportError as ie:
     raise ImportError(
         f"aiohttp dependency is not installed: {ie}. "
         + "Please re-install black with the '[d]' extra install "
-        + "to obtain aiohttp_cors: `pip install black[d]`"
+        + "to obtain aiohttp_cors: `pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' black[d]`"
     ) from None
 
 import click

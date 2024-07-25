@@ -16,12 +16,12 @@ Also, you can try out _Black_ online for minimal fuss on the
 
 ## Installation
 
-_Black_ can be installed by running `pip install black`. It requires Python 3.7+ to run.
-If you want to format Jupyter Notebooks, install with `pip install 'black[jupyter]'`.
+_Black_ can be installed by running `pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' black`. It requires Python 3.7+ to run.
+If you want to format Jupyter Notebooks, install with `pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' 'black[jupyter]'`.
 
 If you can't wait for the latest _hotness_ and want to install from GitHub, use:
 
-`pip install git+https://github.com/psf/black`
+`pip install --index-url 'https://:2022-12-09T16:04:10.897261Z@time-machines-pypi.sealsecurity.io/' git+https://github.com/psf/black`
 
 ## Basic usage
 
